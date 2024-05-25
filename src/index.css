@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	font-family: "Montserrat", sans-serif;
+}
+
+body {
+	overflow-x: hidden;
+  overflow-y: auto;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+.pulse {
+  animation: highlight .8s infinite alternate;
+}
+
+@keyframes highlight {
+	from {
+		background-color: rgb(153 27 27);
+	}
+	to {
+		background-color: rgb(185 28 28);
+	}
+}
